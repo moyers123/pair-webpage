@@ -17,8 +17,8 @@ const popUp = () => {
     setTimeout(() => {
         //remove mole if not clicked on//
         if(holePosition.classList.contains('mole'))
-        holePosition.classList.toggle('mole');
-    }, 2000)
+        holePosition.classList.remove('mole');
+    }, 500)
 }
 
 const moleClick = (event) => {
@@ -32,6 +32,6 @@ const moleClick = (event) => {
 
 board.addEventListener('click', moleClick)
 
-setInterval(popUp, 1000);
+setInterval(popUp, 500);
 
 
