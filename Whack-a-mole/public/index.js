@@ -3,7 +3,9 @@ const board = document.getElementById('whack-a-mole')
 const score = document.getElementById('score')
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
-let scoreCount = 0;
+let scoreCount = localStorage.getItem('score') || 0;
+score.innerHTML = scoreCount;
+
 
 const popUp = () => {
     const indexNumber = Math.floor(Math.random() * 9);
@@ -25,6 +27,7 @@ const moleClick = (event) => {
     if(event.target.classList.contains('mole')){
         scoreCount++;
         score.innerHTML = scoreCount;
+        localStorage.setItem('score', scoreCount);
         event.target.classList.toggle('mole');
         event.target.classList.toggle('whacked')
         setTimeout(() => {

@@ -1,11 +1,34 @@
-body {
+ 
+  body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .left{
+    background-color: aqua;
+    width: 33vw;
+    height: 100vh;
+  }
+
+  .right{
+    background-color: greenyellow;
+    width: 33vw;
+    height: 100vh;
+  }
+
+  .terminal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 33vw;
+    height: 100vh;
+    background-color: brown;
   }
   
   #whack-a-mole {
@@ -15,6 +38,8 @@ body {
     width: 360px;
     display: flex;
     flex-wrap: wrap;
+    cursor: url("images/hammer.png"), auto;
+    z-index: 10;
   }
   
   .hole {
@@ -27,13 +52,11 @@ body {
   
   .mole {
     background-image: url("images/mole.png");
+    
   }
 
   .whacked{
-    background-image: url("images/mole-click.png")
+    background-image: url("images/mole-click.png");
   }
 
-  .mole:hover {
-      cursor: url("images/hammer.png"), auto;
-  }
   

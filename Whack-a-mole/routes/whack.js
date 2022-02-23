@@ -10,17 +10,24 @@ module.exports = () => html`
     <script src="index.js" defer></script>
   </head>
   <body>
-    <h1 id="score">0</h1>
-    <div id="whack-a-mole">
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
+  <div class='left'>
+  </div>
+    <div class='terminal'>
+      <h1 id="score">0</h1>
+      <div id="whack-a-mole">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+    </div>
+    <div class='right'>
+    <-- upgrades -->
     </div>
   </body>
   </html>
