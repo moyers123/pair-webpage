@@ -40,5 +40,3 @@ const moleClick = (event) => {
 board.addEventListener('click', moleClick)
 
 setInterval(popUp, 500);
-
-

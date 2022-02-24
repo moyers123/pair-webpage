@@ -1,1 +1,3 @@
-module.exports = () => html``
+module.exports = () => html`
+<div></div>
+`

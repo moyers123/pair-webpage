@@ -1,5 +1,5 @@
 const html = require('html-template-tag')
-module.exports = () => html`
+module.exports = (upgrades) => html`
   <!DOCTYPE html>
   <html lang="en">
 
